@@ -150,6 +150,9 @@
   <data name="Load" xml:space="preserve">
     <value>Load</value>
   </data>
+  <data name="Min" xml:space="preserve">
+    <value>Size larger than 6</value>
+  </data>
   <data name="Ogofist" xml:space="preserve">
     <value>O go fist</value>
   </data>

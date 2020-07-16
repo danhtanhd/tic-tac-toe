@@ -54,7 +54,15 @@ namespace Caro
 
         private void btnStart_Click(object sender, EventArgs e)// game mới
         {
+            ResourceManager rm = new ResourceManager("Caro.Lang.resource", typeof(frmMain).Assembly);
             txtSize.ReadOnly = false; // khóa ô nhập kích thước
+            if(Convert.ToInt32(txtSize.Text)<6)
+            {
+                //gán string cho biến để hiển thị lên messageBox
+                string mess = rm.GetString("Min", culture);
+                MessageBox.Show(mess);
+                return;
+            }
             // tính toán chiều rộng và cao của một ô cờ
             ChessBoard_Box.box_height = pnlChessBoard.Height / Convert.ToInt32(txtSize.Text);
             ChessBoard_Box.box_width = pnlChessBoard.Width / Convert.ToInt32(txtSize.Text);

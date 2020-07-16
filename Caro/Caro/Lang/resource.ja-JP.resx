@@ -150,6 +150,9 @@
   <data name="Load" xml:space="preserve">
     <value>ロード</value>
   </data>
+  <data name="Min" xml:space="preserve">
+    <value>将棋盤のサイズは最小６からお願いいたします。</value>
+  </data>
   <data name="Ogofist" xml:space="preserve">
     <value>Oが先します。</value>
   </data>
